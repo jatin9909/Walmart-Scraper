@@ -9,7 +9,7 @@ const methodOverride = require('method-override');
 const session = require('express-session');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-
+const puppeteer = require('puppeteer');
 //Requiring user routes below
 const userRoutes = require('./routes/users');
 const adminRoutes = require('./routes/admin');
@@ -21,6 +21,11 @@ const User = require('./models/usermodel');
 	const browser = await puppeteer.launch({
 		args: [ '--no-sandbox', '--disable-setuid-sandbox' ]
 	});
+	const page = await browser.newPage();
+
+	await page.goto('https://www.google.com/', { waitUntil: 'networkidle2' });
+
+	browser.close();
 })();
 
 dotenv.config({ path: './config.env' });
