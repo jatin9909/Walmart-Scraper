@@ -19,7 +19,7 @@ const User = require('./models/usermodel');
 
 (async () => {
 	const browser = await puppeteer.launch({
-		ignoreDefaultArgs: [ '--disable-extensions' ]
+		args: [ '--no-sandbox', '--disable-setuid-sandbox' ]
 	});
 })();
 
