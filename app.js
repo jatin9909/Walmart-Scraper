@@ -55,7 +55,7 @@ app.use((req, res, next) => {
 	next();
 });
 
-//setting middleware for method override
+//setting middl eware for method override
 app.use(methodOverride('_method'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
