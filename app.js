@@ -16,6 +16,9 @@ const adminRoutes = require('./routes/admin');
 
 //Requring user model
 const User = require('./models/usermodel');
+const browser = await puppeteer.launch({
+    ignoreDefaultArgs: ['--disable-extensions'],
+  });
 
 dotenv.config({ path: './config.env' });
 mongoose
