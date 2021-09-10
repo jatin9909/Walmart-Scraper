@@ -57,3 +57,5 @@ nodemon
 localhost:3000
 ```
 
+### Note
+Item will be shown Out of stock if the item is not sold by Walmart directly and In stock if Item is directly sold by Walmart. 
