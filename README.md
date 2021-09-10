@@ -19,3 +19,41 @@ This app is used to track the Walmart products stock and prices. </br>
 - <b>Front End</b> : HTML5, CSS3, EJS - Embedded JavaScript templates.
 - <b>Back End</b> : Node.js, Express.js, MongoDB.
 - <b>NPM Packages</b> : Express, Mongoose, Async, Body-parser, Cheerio, Connect-flash, Crypto, Dotenv, Ejs, Express-session, Method-override, Nodemailer, Passport, Passport-local, Passport-local-mongoose, Path, Puppeteer
+
+## Getting Started
+
+- Clone the repository
+
+```bash
+https://github.com/jatin9909/Walmart-Scraper.git
+```
+
+> Create `config.env` file and add credentials (see `config.env` for reference).
+
+- First install node modules listed above:
+
+```
+npm install <package-name>
+```
+
+- Run MongoDB using
+```
+mongod
+```
+
+- Run app.js using
+```
+node app.js
+``` 
+or 
+```
+nodemon
+``` 
+(you need to install it seperatley using npm install nodemon)
+
+
+- Open local host in your machine
+```
+localhost:3000
+```
+
